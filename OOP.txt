@@ -1,0 +1,45 @@
+# Create a class of BankAccount
+class BankAccount:
+   
+   # Class Variable 
+   bank_name = "SBI"
+   
+   # I need to give it some instance variables
+   def __init__(self,owner,balance):
+       self.owner = owner
+       self.balance = balance
+
+   # Create a method for deposit 
+   def deposit(self,amount):
+       self.balance = self.balance + amount
+       print(f"{self.owner} deposited {amount}. New balance is {self.balance}")
+
+   # Create a method for withdrawl 
+   def withdraw(self,amount):
+       if amount > self.balance:
+           print("Insufficient Funds")
+       else:
+           self.balance = self.balance - amount 
+           print(f"{self.owner} has withdrawn {amount}.New balance is {self.balance}")
+
+
+# Above we have created a class of Bank Account and the basic variables to be included
+# Now I am going to create a few instances of the class BankAccount
+acc1 = BankAccount("Aravind",5000)
+acc2 = BankAccount("Talib",7000)
+
+acc1.deposit(1000)
+acc2.withdraw(8000)
+
+### Create a class of 'cars'
+#### Create a class variable and name it as 'Brand' and assign some value of your choice
+# Then create three instance variables 'color','engine_capacity','model(year of Manufacturing)'
+# Then create two instances of cars and call all the variables through the object
+
+
+#### Let's create a class of 'students'
+$### Let's create one class variable and name it as 'institution' and give it as 'HCL GUVI'
+
+# Now create 4 instance attributes, name, coursename,duration and totalfee
+# Create a instance method to calculate the balance fee 
+# Create two instances of the class and fetch all possible attributes and apply the instance method to find the blalnce fee
